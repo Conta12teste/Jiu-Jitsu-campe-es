@@ -1,0 +1,444 @@
+import { Button } from '@/components/ui/button.jsx'
+import './App.css'
+
+function App() {
+  return (
+    <div className="min-h-screen bg-black text-yellow-400">
+      {/* Header */}
+      <header className="bg-yellow-400 text-black py-4 px-6">
+        <nav className="max-w-6xl mx-auto flex justify-between items-center">
+          <h1 className="text-2xl font-bold">campeoes-do-futuro</h1>
+          <div className="hidden md:flex space-x-6">
+            <a href="#sobre" className="hover:text-gray-700 transition-colors">Sobre</a>
+            <a href="#conquistas" className="hover:text-gray-700 transition-colors">Conquistas</a>
+            <a href="#impacto" className="hover:text-gray-700 transition-colors">Impacto</a>
+            <a href="#treinos" className="hover:text-gray-700 transition-colors">Treinos</a>
+            <a href="#patrocinio" className="hover:text-gray-700 transition-colors">Patrocínio</a>
+            <a href="#contato" className="hover:text-gray-700 transition-colors">Contato</a>
+          </div>
+          <Button className="bg-black text-yellow-400 hover:bg-gray-800">
+            Seja um Parceiro
+          </Button>
+        </nav>
+      </header>
+
+      {/* Hero Section */}
+      <section className="py-20 px-6 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            TRANSFORME-SE COM O JIU-JITSU
+          </h2>
+          <p className="text-xl md:text-2xl mb-8 text-yellow-300">
+            Disciplina, força e superação para todos os níveis.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-8 py-3">
+              Inscreva-se agora
+            </Button>
+            <Button variant="outline" className="border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black text-lg px-8 py-3">
+              Seja um Patrocinador
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Sobre Nós */}
+      <section id="sobre" className="py-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-4xl font-bold mb-8 text-yellow-400">Sobre Nós</h3>
+          <div className="border-t border-yellow-400 w-32 mx-auto mb-8"></div>
+          <p className="text-lg leading-relaxed text-yellow-300 mb-8">
+            Fundado em 2018 por Gesilvânio Lima, conhecido como Cigano, o projeto Campeões do Futuro tem como missão 
+            transformar vidas através do Jiu-Jitsu. Com academias localizadas nos bairros Nova Vitória e Gleba E, 
+            oferecemos treinamento de alto nível para atletas iniciantes e avançados.
+          </p>
+          <div className="grid md:grid-cols-3 gap-8 mt-12">
+            <div className="text-center">
+              <div className="text-3xl font-bold text-yellow-400 mb-2">150+</div>
+              <div className="text-yellow-300">Alunos Ativos</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-yellow-400 mb-2">7</div>
+              <div className="text-yellow-300">Anos de História</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold text-yellow-400 mb-2">2</div>
+              <div className="text-yellow-300">Unidades</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Conquistas */}
+      <section id="conquistas" className="py-16 px-6 bg-gray-900">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-4xl font-bold mb-8 text-yellow-400">Conquistas</h3>
+          <div className="border-t border-yellow-400 w-32 mx-auto mb-8"></div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-black p-6 rounded-lg border border-yellow-400">
+              <h4 className="text-xl font-bold text-yellow-400 mb-4">Competições Regionais</h4>
+              <p className="text-yellow-300">Múltiplas medalhas em campeonatos estaduais e regionais, destacando a qualidade técnica de nossos atletas.</p>
+            </div>
+            <div className="bg-black p-6 rounded-lg border border-yellow-400">
+              <h4 className="text-xl font-bold text-yellow-400 mb-4">Formação de Atletas</h4>
+              <p className="text-yellow-300">Mais de 50 faixas-pretas formadas, contribuindo para o crescimento do Jiu-Jitsu na região.</p>
+            </div>
+            <div className="bg-black p-6 rounded-lg border border-yellow-400">
+              <h4 className="text-xl font-bold text-yellow-400 mb-4">Reconhecimento</h4>
+              <p className="text-yellow-300">Academia reconhecida pela federação estadual e respeitada na comunidade do Jiu-Jitsu.</p>
+            </div>
+            <div className="bg-black p-6 rounded-lg border border-yellow-400">
+              <h4 className="text-xl font-bold text-yellow-400 mb-4">Projetos Sociais</h4>
+              <p className="text-yellow-300">Aulas gratuitas para jovens em situação de vulnerabilidade social.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Impacto Social */}
+      <section id="impacto" className="py-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-4xl font-bold mb-8 text-yellow-400">Impacto Social</h3>
+          <div className="border-t border-yellow-400 w-32 mx-auto mb-8"></div>
+          <p className="text-lg leading-relaxed text-yellow-300 mb-12">
+            Nosso projeto vai além do esporte. Transformamos vidas, oferecemos oportunidades e construímos 
+            uma comunidade mais forte através dos valores do Jiu-Jitsu.
+          </p>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-4xl font-bold text-yellow-400 mb-4">🏆</div>
+              <h4 className="text-xl font-bold text-yellow-400 mb-2">Excelência Esportiva</h4>
+              <p className="text-yellow-300">Formação de atletas de alto nível com técnica e disciplina</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-yellow-400 mb-4">🤝</div>
+              <h4 className="text-xl font-bold text-yellow-400 mb-2">Inclusão Social</h4>
+              <p className="text-yellow-300">Oportunidades para jovens de todas as classes sociais</p>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold text-yellow-400 mb-4">💪</div>
+              <h4 className="text-xl font-bold text-yellow-400 mb-2">Desenvolvimento Pessoal</h4>
+              <p className="text-yellow-300">Autoestima, disciplina e valores para a vida</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Treinos */}
+      <section id="treinos" className="py-16 px-6 bg-gray-900">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-4xl font-bold mb-8 text-yellow-400">Treinos</h3>
+          <div className="border-t border-yellow-400 w-32 mx-auto mb-8"></div>
+          <p className="text-lg leading-relaxed text-yellow-300 mb-8">
+            Temos horários flexíveis e turmas para todas as idades. Venha conhecer nossos treinos e iniciar sua jornada no Jiu-Jitsu.
+          </p>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-black p-6 rounded-lg border border-yellow-400">
+              <h4 className="text-xl font-bold text-yellow-400 mb-4">Nova Vitória</h4>
+              <p className="text-yellow-300 mb-4">Segunda a Sexta: 6h às 22h</p>
+              <p className="text-yellow-300">Sábado: 8h às 12h</p>
+            </div>
+            <div className="bg-black p-6 rounded-lg border border-yellow-400">
+              <h4 className="text-xl font-bold text-yellow-400 mb-4">Gleba E</h4>
+              <p className="text-yellow-300 mb-4">Segunda a Sexta: 6h às 22h</p>
+              <p className="text-yellow-300">Sábado: 8h às 12h</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Patrocínio */}
+      <section id="patrocinio" className="py-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-4xl font-bold mb-8 text-yellow-400">Oportunidades de Patrocínio</h3>
+          <div className="border-t border-yellow-400 w-32 mx-auto mb-8"></div>
+          <p className="text-lg leading-relaxed text-yellow-300 mb-12">
+            Junte-se a nós e faça parte da transformação de vidas através do esporte. 
+            Oferecemos diversas oportunidades de parceria para empresas que compartilham nossos valores.
+          </p>
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-gray-900 p-6 rounded-lg border border-yellow-400">
+              <h4 className="text-xl font-bold text-yellow-400 mb-4">Visibilidade</h4>
+              <p className="text-yellow-300">Sua marca em eventos, competições e nas redes sociais da equipe</p>
+            </div>
+            <div className="bg-gray-900 p-6 rounded-lg border border-yellow-400">
+              <h4 className="text-xl font-bold text-yellow-400 mb-4">Responsabilidade Social</h4>
+              <p className="text-yellow-300">Apoie projetos sociais e transformação de vidas através do esporte</p>
+            </div>
+            <div className="bg-gray-900 p-6 rounded-lg border border-yellow-400">
+              <h4 className="text-xl font-bold text-yellow-400 mb-4">Networking</h4>
+              <p className="text-yellow-300">Conecte-se com uma comunidade engajada e apaixonada pelo Jiu-Jitsu</p>
+            </div>
+          </div>
+          <Button className="bg-yellow-400 text-black hover:bg-yellow-300 text-lg px-8 py-3">
+            Quero ser um Patrocinador
+          </Button>
+        </div>
+      </section>
+
+      {/* Fale Conosco */}
+      <section id="contato" className="py-16 px-6 bg-gray-900">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-4xl font-bold mb-8 text-yellow-400">Fale Conosco</h3>
+          <div className="border-t border-yellow-400 w-32 mx-auto mb-8"></div>
+          <p className="text-lg mb-6 text-yellow-300">
+            Quer saber mais sobre treinos ou oportunidades de patrocínio? Entre em contato conosco!
+          </p>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div>
+              <h4 className="text-xl font-bold text-yellow-400 mb-4">Para Alunos</h4>
+              <p className="text-yellow-300 mb-2">
+                <strong>Instagram:</strong>{' '}
+                <a 
+                  href="https://instagram.com/campeoes_fight" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-yellow-400 hover:text-yellow-300 underline"
+                >
+                  @campeoes_fight
+                </a>
+              </p>
+              <p className="text-yellow-300">
+                <strong>WhatsApp:</strong> (XX ) XXXXX-XXXX
+              </p>
+            </div>
+            <div>
+              <h4 className="text-xl font-bold text-yellow-400 mb-4">Para Patrocinadores</h4>
+              <p className="text-yellow-300 mb-2">
+                <strong>Email:</strong> patrocinio@campeoesdofuturo.com
+              </p>
+              <p className="text-yellow-300">
+                <strong>Telefone:</strong> (XX) XXXXX-XXXX
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-yellow-400 text-black py-6 px-6 text-center">
+        <p>© 2025 Campeões do Futuro - Todos os direitos reservados</p>
+      </footer>
+    </div>
+  )
+} @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campeões do Futuro - Jiu-Jitsu</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+# Campeões do Futuro - Site
+
+Site oficial do projeto Campeões do Futuro, academia de Jiu-Jitsu.
+
+## 🥋 Sobre o Projeto
+
+Fundado em 2018 por Gesilvânio Lima (Cigano), o projeto Campeões do Futuro tem como missão transformar vidas através do Jiu-Jitsu. Com academias localizadas nos bairros Nova Vitória e Gleba E, oferecemos treinamento de alto nível para atletas iniciantes e avançados.
+
+## 🚀 Tecnologias Utilizadas
+
+- React 18
+- Vite
+- Tailwind CSS
+- Shadcn/ui
+
+## 📱 Funcionalidades
+
+- Design responsivo
+- Navegação suave entre seções
+- Interface moderna e atrativa
+- Otimizado para performance
+
+## 🌐 Deploy
+
+Este site está configurado para ser hospedado no GitHub Pages.
+
+### Como fazer deploy:
+
+1. Faça o build do projeto:
+```bash
+npm run build  
+# Instruções para Hospedagem no GitHub Pages
+
+## Passo a Passo para Hospedar o Site
+
+### 1. Criar Repositório no GitHub
+1. Acesse [GitHub.com](https://github.com )
+2. Clique em "New repository"
+3. Nomeie o repositório (ex: `campeoes-do-futuro-site`)
+4. Marque como público
+5. Clique em "Create repository"
+
+### 2. Fazer Upload dos Arquivos
+
+#### Opção A: Via Interface Web do GitHub
+1. No repositório criado, clique em "uploading an existing file"
+2. Arraste todos os arquivos da pasta `/home/ubuntu/campeoes-site/`
+3. Faça commit das mudanças
+
+#### Opção B: Via Git (se você tem Git instalado)
+```bash
+git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+git branch -M main
+git push -u origin main
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        
+    - name: Install dependencies
+      run: npm install
+      
+    - name: Build
+      run: npm run build
+      
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
+
+
+        
+        
